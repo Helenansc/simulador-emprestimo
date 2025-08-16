@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Fictício - Simulador de Empréstimos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="imagem/ChatGPT image 14 de ago. de 2025, 20_50_44.png" alt="Logo Banco Fictício" class="logo">
+        <h1>Banco Fictício</h1>
+        <p>Simulador de Empréstimos</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Preencha os dados</h2>
+            <form id="loanForm">
+                <label for="amount">Valor do Empréstimo (R$):</label>
+                <input type="number" id="amount" required>
+
+                <label for="interest">Taxa de Juros (% ao mês):</label>
+                <input type="number" id="interest" step="0.01" required>
+
+                <label for="months">Prazo (meses):</label>
+                <input type="number" id="months" required>
+
+                <button type="submit">Calcular</button>
+            </form>
+        </section>
+
+        <section id="results" class="results hidden">
+            <h2>Resultados da Simulação</h2>
+            <p id="monthlyPayment"></p>
+            <p id="totalPayment"></p>
+            <p id="totalInterest"></p>
+
+            <h3>Tabela de Amortização</h3>
+            <table id="amortizationTable">
+                <thead>
+                    <tr>
+                        <th>Mês</th>
+                        <th>Parcela (R$)</th>
+                        <th>Amortização (R$)</th>
+                        <th>Juros (R$)</th>
+                        <th>Saldo Devedor (R$)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+            <h3>Visualização Gráfica</h3>
+            <canvas id="loanChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Banco Fictício - Simulação Educacional</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
