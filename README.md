@@ -14,10 +14,8 @@ Ele permite calcular parcelas pelo **Sistema Price (Tabela Francês)**, gerar a 
 - HTML5
 - CSS3
 - JavaScript
-- [Chart.js](https://www.chartjs.org/)
 
-## 📸 Demonstração
-![screenshot](./screenshot.png)
+
 
 ---
 
